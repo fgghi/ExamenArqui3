@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Login",
+    "description": "Login Information for the api",
+    "type": "object",
+    "properties": {
+      "email": {
+        "description": "Email",
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 20,
+        "format": "email"
+      },
+      "password": {
+        "description": "Password",
+        "type": "string",
+        "minLength": 8,
+        "maxLength": 20
+      }
+    },
+    "required": [
+      "email",
+      "password"
+    ]
+  }
+  
